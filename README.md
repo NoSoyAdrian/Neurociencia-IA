@@ -12,3 +12,5 @@ para todas las submatrices.
 
 En ambas secciones del código, se utiliza una estructura clara y ordenada, con comentarios explicativos y nombres de variables descriptivos para facilitar la comprensión 
 y el mantenimiento del código.
+
+En la sección principal al inicio del código solo es la obtencion de los "segments", "ts" y los electrones que se seleccionaban
