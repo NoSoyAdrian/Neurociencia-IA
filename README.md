@@ -1,16 +1,10 @@
-El código consta de dos secciones distintas.
+The code consists of two distinct sections.
 
-La primera parte se centra en el análisis de señales EEG (Electroencefalografía) para eliminar segmentos similares entre diferentes electrodos. 
-Comienza definiendo una función llamada eliminar_segmentos que realiza este proceso. Primero, identifica las marcas de tiempo idénticas entre los electrodos 
-y obtiene los segmentos correspondientes a esas marcas. Luego, calcula la correlación de Pearson entre los segmentos de cada par de electrodos. Si la correlación 
-es mayor o igual a 0.7, se conserva el segmento con mayor amplitud y se elimina el otro. Este proceso se realiza iterativamente para 
-diferentes combinaciones de electrodos, optimizando así la eliminación de segmentos redundantes.
+The first part focuses on analyzing EEG (Electroencephalography) signals to remove similar segments between different electrodes. It starts by defining a function called "remove_segments" that performs this process. First, it identifies identical timestamp marks between the electrodes and retrieves the corresponding segments for those marks. Then, it calculates the Pearson correlation between the segments of each pair of electrodes. If the correlation is greater than or equal to 0.7, the segment with the higher amplitude is retained, and the other one is removed. This process is iteratively performed for different combinations of electrodes, thus optimizing the removal of redundant segments.
 
-La segunda parte del código trabaja con matrices de datos y tiene como objetivo filtrar elementos no deseados de submatrices 3x3. Se definen las matrices originales 
-y se extraen todas las posibles submatrices 3x3. Luego, se filtran los elementos no deseados de estas submatrices y se imprimen los resultados. Este proceso se repite 
-para todas las submatrices.
+The second part of the code works with data matrices and aims to filter unwanted elements from 3x3 submatrices. The original matrices are defined, and all possible 3x3 submatrices are extracted. Then, the unwanted elements from these submatrices are filtered, and the results are printed. This process is repeated for all submatrices.
 
-En ambas secciones del código, se utiliza una estructura clara y ordenada, con comentarios explicativos y nombres de variables descriptivos para facilitar la comprensión 
-y el mantenimiento del código.
+In both sections of the code, a clear and organized structure is used, with explanatory comments and descriptive variable names to facilitate understanding and maintenance of the code.
 
-En la sección principal al inicio del código solo es la obtencion de los "segments", "ts" y los electrones que se seleccionaban
+In the main section at the beginning of the code, only the obtaining of "segments", "ts", and the selected electrodes is performed.
+
